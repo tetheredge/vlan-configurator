@@ -23,7 +23,7 @@ def upgrade() -> None:
                     sa.Column('id', sa.Integer(), nullable=False),
                     sa.Column('vlan_id', sa.Integer(), nullable=False),
                     sa.Column('name', sa.Text(), nullable=False),
-                    sa.Column('description', sa.Text(), nullable=False),
+                    sa.Column('description', sa.Text(), nullable=True),
                     sa.PrimaryKeyConstraint('id', name='vlans_pkey'),
                     sa.Column('created_at', TIMESTAMP, server_default=sa.func.now()),
                     sa.Column('updated_at', TIMESTAMP, onupdate=sa.func.now()),

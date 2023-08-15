@@ -18,3 +18,13 @@ class Credentials(object):
 
     def get_db_port(self):
         return os.environ.get('DB_PORT', 5432)
+
+    def get_hvac_token(self):
+        return os.environ.get('VAULT_TOKEN')
+
+    def get_hvac_addr(self):
+        return os.environ.get('VAULT_ADDR')
+
+    def get_hvac_path(self):
+        return os.environ.get('VAULT_PATH')
+
