@@ -1,3 +1,5 @@
 Flask==2.3.2
+hvac==1.1.1
+netmiko==4.2.0
 pytest==7.4.0
 SQLAlchemy==2.0.19

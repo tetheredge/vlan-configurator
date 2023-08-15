@@ -1,2 +1,5 @@
 .idea/
 __pycache__/
+bin/vault_password_store.py
+imports/devices_to_import.txt
+output.txt
